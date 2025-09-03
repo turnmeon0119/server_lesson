@@ -1,66 +1,3 @@
-git commit -m
-git branch
-git checkout working
-git reset --hard\ngit checkout working\n
-git branck
-git branch
-ls
-touch README.md
-ls
-git add README.md
-git commit -m 'add: README.md'
-git push origin working
-log
-git log
-git log
-ls
-git branch
-cd..
-cd ..
-ls
-cd Desktop
-git branch
-ls
-find ~ -name "wagyu_price"\n
-ls
-cd ~/wagyu_price
-find /Users/jumpeihirosawa -type d -name "wagyu_price" 2>/dev/null\n
-cd Desktop
-cd ~/Desktop/wagyu_price\n
-git status
-ls
-git branch
-ls -a
-git add README.md\n
-git commit -m 'add: README.md'
-git add README.md        # ファイルを追加\ngit commit -m "add: README.md"  # その変更を記録\n
-git add README.md\n
-git commit -m "add: README.md"\n
-echo .DS_Store >> .gitignore
-git add .gitignore
-git commit -m "chore: ignore .DS_Store"
-git add README.md
-git commit -m "add: README.md"
-ls
-git add README.md
-git commit -m "add: README.md"
-rm README.md
-ls
-git branch
-touch README.md
-ls
-git add README.md
-git commit -m 'add: README.md'
-echo ".DS_Store" >> .gitignore\necho "password.txt" >> .gitignore\n
-git add .gitignore
-git commit -m "update: .gitignore に不要ファイルを追加"
-git status
-git add README.md
-git commit -m "add: README.md"
-git push origin working\n
-ls
-git checkout main
-git merge working
 git push origin main
 git pull origin main
 git commit
@@ -298,3 +235,66 @@ echo "[documents]"; ls -1 documents | head -n 5; echo "..."; ls -1 documents | t
 echo "[trash]";     ls -1 trash | head -n 5;     echo "..."; ls -1 trash | tail -n 5\n
 vi ~/server_lesson/linux_practice2/.gitignore\n
 cd ~/server_lesson/linux_practice2\n
+fc -ln -300 > exec_command.log
+ls -l exec_command.log\n
+head -5 exec_command.log\n
+cd ~/server_lesson\n
+git add linux_practice2/documents linux_practice2/trash\n
+git commit -m "chore(practice2): add documents and move 20-40 to trash"\n
+git add linux_practice2/.gitignore\n
+git commit -m "chore(practice2): ignore trash/gizumo20-29.md"\n
+git add linux_practice2/exec_command.log\n
+git commit -m "chore(practice2): add exec_command.log (last 300 history)"\n
+cd ~/server_lesson\n
+git branch --show-current\n
+git status\n
+git add -A\n
+git commit -m "chore: initial import (practice1/2 + README)"\n
+git remote add origin https://github.com/turnmeon0119/server_lesson.git\n
+git remote -v || true\n
+git switch -c feature/linux-practice\n
+git add -A\n
+git commit -m "feat(practice2): add docs 01-50, move 20-40 to trash, add .gitignore, export history"\n
+git push -u origin feature/linux-practice2\n
+git push -u origin feature/linux-practice\n
+git branch
+jumpeihirosawa@jumpeinoMacBook-Pro server_lesson % git branch\n* feature/linux-practice\n  main\njumpeihirosawa@jumpeinoMacBook-Pro server_lesson % 
+git switch main\n
+git commit --allow-empty -m "chore: initialize main branch"\n
+git push -u origin main\n
+git switch feature/linux-practice\n
+git push -u origin feature/linux-practice\n
+gh repo edit --default-branch main\n
+git branch
+git push -u origin feature/linux-practice\n
+cd ~/server_lesson\n
+git switch --orphan baseline\n
+git rm -r --cached .\n
+printf "# server_lesson\n\nBaseline branch.\n" > README.md\n
+git add README.md\n
+git commit -m "chore: baseline (README only)"\n
+git brancj
+git branch
+git push -u origin baseline\n
+ls
+cd ~/server_lesson\n
+ls -1 linux_practice2/documents | head\n
+git branch --show-current\n
+git status -s\n
+git ls-tree -r --name-only HEAD | grep '^linux_practice2/' || echo "trackedなし"\n
+git switch feature/linux-practice\n
+git branch
+mkdir -p linux_practice1/public\n
+[ -f linux_practice1/public/index.php ] || cat > linux_practice1/public/index.php <<'PHP'\n
+[ -f linux_practice1/public/index.php ] || cat > linux_practice1/public/index.php <<'PHP'\n<?php echo "linux_practice1: It works!\n";\nPHP
+[ -f linux_practice1/public/index_bk.php ] || cp -p linux_practice1/public/index.php linux_practice1/public/index_bk.php\n
+rm -rf linux_practice1/tmp\n
+cp -R linux_practice1/public linux_practice1/tmp\n
+rm -f linux_practice1/tmp/index_bk.php\n
+[ -f README.md ] || cat > README.md <<'MD'\nMD
+vi README.md
+mkdir -p linux_practice2/documents\n
+for i in $(seq -w 1 50); do : > linux_practice2/documents/gizumo${i}.md; done\n
+mkdir -p linux_practice2/trash\n
+for i in $(seq -w 20 40); do mv linux_practice2/documents/gizumo${i}.md linux_practice2/trash/ 2>/dev/null; done\n
+echo 'trash/gizumo2[0-9].md' >> linux_practice2/.gitignore\n
