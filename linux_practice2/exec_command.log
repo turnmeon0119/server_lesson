@@ -1,0 +1,300 @@
+git push origin main
+git pull origin main
+git commit
+git pull origin main
+git push origin main
+git pull origin main --rebase\n
+git push origin main
+git status
+ls
+git branch
+git checkout main
+git checkout -b 1_change_submit_color_blue\n
+git branch
+git remote -v
+git add .
+git commit -m"検索ボタンの色を変更"
+killall ControllStarip
+  people.name\nFROM\n  people\nLEFT JOIN\n  reports ON people.person_id = reports.person_id\nWHERE\n  reports.person_id IS NULL;
+mysql -u root -p\n
+mysql -u root -p\n
+brew services list\n
+brew services start mysql@8.0\n
+[200~mysql -u root -p
+~
+brew services list\n
+mysql -u root -p\n
+git init
+git remote add origin https://github.com/turnmeon0119/db_lesson_basic.git\n
+git add db_lesson.sql
+git commit -m "Add db_lesson.sql\n\ngit commit -m "Add db_lesson.sql"\n
+git commit -m "Add db_lesson.sql"\n
+git push -u origin main\n
+git checkout -b work_branch\n
+git add db_lesson.sql
+git commit -m "課題のSQLを追加"
+git push -u origin work_branch\n
+There isn’t anything to compare.\nmain and work_branch are identical.\n\n
+git add db_lesson.sql
+git commit -m "コメントを追加"
+[200~git status
+~git status\n
+git status\n
+git add db_lesson.sql
+git branch
+git commit -m "課題内容を追加"
+git push origin work_branch\n
+git branch
+git add db_lesson.sql
+git commit -m "課題内容を追加"
+git push origin work_branch
+git branch
+git checkout main
+git rm -rf .
+git commit -m "差分生成のためファイル削除"
+git push origin main
+git checkout work_branch\n
+git push origin work_branch\n
+git checkout main\n
+git branch
+git add db_lesson.sql
+git commit -m "作業中の変更をコミット"
+git push origin work_branch
+git checkout main\n
+git checkout -b feature_branch\n
+git add db_lesson.sql
+ls\n
+ls
+git add db_lesson.sql\n
+ls
+git add ./サブフォルダ/db_lesson.sql\n
+git status
+git checkout work_branch
+git checkout main
+git checkout work_branch
+git push origin work_branch
+git checkout main
+git status
+ls
+git git checkout -b working_branch
+git checkout -b working_branch
+git branch
+git add db_lesson.sql\n
+pwd
+ls
+git status
+git restore db_lesson.sql\n
+git branch
+git add db_lesson.sql
+git commit -m "db_lesson.sql を新規作成"
+git push origin working_branch
+git status
+git add db_lesson.sql
+git commit -m "db_lesson.sql を新規作成"
+git push origin working_branch
+ls
+pwd
+git branch
+git addgit add db_lesson.sql
+git add db_lesson.sql
+git commit -m "db_lesson.sql を新規作成"
+git push origin working_branch
+git status                               # 変更確認\n
+git add compose.yml php-apache/000-default.conf php-apache/app/public/index.php\n
+git commit -m "fix: DocumentRoot と volumes を一致 / DSNの空白削除 / 404解消"\n
+git push -u origin docker_review\n
+git diff --name-only\n
+git diff --name-only --staged\n
+git log --oneline --decorate -n 5\n
+exit
+ls
+mkdir Laravel_lesson
+cd Laravel_lesson
+git clone https://github.com/[自分のユーザー名]/laravel-docker-template.git .
+ls
+git clone https://github.com/turnmeon0119/laravel-docker-template.git .
+ls
+cd docker-compose.yml
+docker-compose up -d
+cd /path/to/docker.compose.yml
+docker compose up -d --build\n
+docker-compose ps
+docker-compose exec app composer create-project --prefer-dist laravel/laravel . "6.*"
+ls
+cd src
+ls
+cd .
+cd ..
+git status
+git add .\n
+git commit -m 'add: Laravelプロジェクトの追加'\n
+git perf:
+git push origin master\n
+git checkout -b develop/todo-app\n
+ls
+cd 
+git branch
+cd -
+pwd
+ls -a
+git branch --show-current
+git status\n
+git push -u origin develop/todo-app\n
+docker-compose exec db bash
+cd /path/to/Laravel_lesson/src\n
+ls
+cd -\n
+cd ~/Laravel_lesson\n
+cd src\n
+ls -la .env*
+cp .env.example .env\n
+open -a "Visual Studio Code" .env
+docker-compose exec app bash\n
+docker compose exec db mysql -uroot -psecret -e "USE laravel_app; DESC todos;"\n
+vi database/migrations/2025_09_02_035628_create_todos_table.php
+vi database/migrations/2025_09_02_035628_create_todos_table.php
+php artisan migrate:rollback\n
+docker compose config --services\n
+cd ~/Laravel_lesson
+docker compose up -d\n
+cd src\ngrep -E '^DB_(CONNECTION|HOST|PORT|DATABASE|USERNAME|PASSWORD)=' .env
+docker compose exec app php artisan migrate
+docker compose exec app php artisan migrate:status\n
+docker compose exec db mysql -uroot -psecret -D laravel_app -e "SHOW TABLES;"
+docker compose exec db mysql -uroot -psecret -D laravel_app -e "DESC todos;"\n
+docker compose exec app php artisan migrate:rollback --step=1\n
+docker compose exec app php artisan migrate
+migrate:status
+docker compose exec app php artisan migrate:status\n
+docker compose exec db mysql -uroot -psecret -D laravel_app -e "SHOW TABLES;"\ndocker compose exec db mysql -uroot -psecret -D laravel_app -e "DESC todos;"\n
+docker compose exec app php artisan migrate:reset\n
+cd ~/Laravel_lesson
+git branch --show-current
+git status
+git add src/database/migrations/2025_09_02_035628_create_todos_table.php\n
+git commit -m "feat(todo): add todos table (id, content, timestamps) via migration"\n
+git push -u origin develop/todo-app\n
+cd src
+ls
+php artisan make:seeder TodoSeeder\n
+docker compose exec app php artisan make:seeder TodoSeeder\n
+code database/seeders/TodoSeeder.php\n
+open -a "Visual Studio Code" database/seeders/TodoSeeder.php\n
+docker compose exec app bash -lc 'pwd; ls -la database/seeders; find /var/www -maxdepth 4 -name "TodoSeeder.php" 2>/dev/null'\n
+cd ~/Laravel_lesson\n
+find . -name "TodoSeeder.php"\n
+open -a "Visual Studio Code" ./src/database/seeds/TodoSeeder.php\n# またはターミナル派:\n# docker compose exec app bash -lc 'vi database/seeds/TodoSeeder.php'\n
+php artisan db:seed\n
+ls
+docker compose up -d\n
+docker compose exec app php artisan db:seed\n
+docker compose exec app php artisan migrate:status\n
+docker compose exec app php artisan migrate\n
+docker compose exec app php artisan db:seed\n
+# DBに todos があるか？\ndocker compose exec db mysql -uroot -psecret -D laravel_app -e "SHOW TABLES LIKE 'todos';"\n
+php artisan db:seed\n
+ls
+docker compose up -d\n
+docker compose exec app php artisan db:seed\n
+docker compose exec db mysql -uroot -psecret -D laravel_app -e "SELECT * FROM todos;"\n
+docker compose exec app bash\n
+cd ..
+mkdir -p ~/server_lesson/linux_practice1/public\n
+ls
+cp -a ~/server_lesson/linux_practice1/public/index.php \\n      ~/server_lesson/linux_practice1/public/index_bk.php\n
+jumpeihirosawa@jumpeinoMacBook-Pro ~ % ls\nDB_lesson\tDownloads\tLibrary\t\tpc_basic.zip\nDesktop\t\texit\t\tMovies\t\tPictures\ndocker_lesson\tHTML&CSS .css\tMusic\t\tPublic\nDocuments\tLaravel_lesson\tpc_basic\tserver_lesson\njumpeihirosawa@jumpeinoMacBook-Pro ~ % cp -a ~/server_lesson/linux_practice1/public/index.php \\n      ~/server_lesson/linux_practice1/public/index_bk.php\n\ncp: /Users/jumpeihirosawa/server_lesson/linux_practice1/public/index.php: No such file or directory
+mkdir -p ~/server_lesson/linux_practice1/public\n
+ls
+ls -l ~/server_lesson/linux_practice1/public\n
+[ -f ~/server_lesson/linux_practice1/public/index.php ] || cat > ~/server_lesson/linux_practice1/public/index.php <<'PHP'\n<?php\necho "linux_practice1: It works! 🎉\n";\nPHP
+ls -l ~/server_lesson/linux_practice1/public\n
+cp -p ~/server_lesson/linux_practice1/public/index.php \\n      ~/server_lesson/linux_practice1/public/index_bk.php
+ls -l ~/server_lesson/linux_practice1/public | grep index\n
+cd ~/server_lesson/linux_practice1\n
+ls
+rm -rf tmp\n
+cp -R public tmp\n
+ls -la tmp\n
+git add ..
+rm -f tmp/index_bk.php\n
+ls -la tmp | grep index\n
+cd ~/server_lesson\n
+vi README.md\n
+cat README.md\n
+[ -d .git ] || git init\n
+git status
+cd ~/server_lesson/linux_practice2\n
+mkdir -p ~/server_lesson/linux_practice2/documents
+for i in $(jot -w %02d 50); do : > ~/server_lesson/linux_practice2/documents/gizumo${i}.md; done\n
+ls -1 ~/server_lesson/linux_practice2/documents | head\n
+ls -1 ~/server_lesson/linux_practice2/documents | tail
+mkdir -p ~/server_lesson/linux_practice2/trash\n
+cd ~/server_lesson/linux_practice2\n
+for i in $(jot 21 40 20); do mv documents/gizumo$(printf "%02d" "$i").md trash/; done\n
+echo "[documents]"; ls -1 documents | head -n 5; echo "..."; ls -1 documents | tail -n 5\n
+echo "[trash]";     ls -1 trash | head -n 5;     echo "..."; ls -1 trash | tail -n 5\n
+vi ~/server_lesson/linux_practice2/.gitignore\n
+cd ~/server_lesson/linux_practice2\n
+fc -ln -300 > exec_command.log
+ls -l exec_command.log\n
+head -5 exec_command.log\n
+cd ~/server_lesson\n
+git add linux_practice2/documents linux_practice2/trash\n
+git commit -m "chore(practice2): add documents and move 20-40 to trash"\n
+git add linux_practice2/.gitignore\n
+git commit -m "chore(practice2): ignore trash/gizumo20-29.md"\n
+git add linux_practice2/exec_command.log\n
+git commit -m "chore(practice2): add exec_command.log (last 300 history)"\n
+cd ~/server_lesson\n
+git branch --show-current\n
+git status\n
+git add -A\n
+git commit -m "chore: initial import (practice1/2 + README)"\n
+git remote add origin https://github.com/turnmeon0119/server_lesson.git\n
+git remote -v || true\n
+git switch -c feature/linux-practice\n
+git add -A\n
+git commit -m "feat(practice2): add docs 01-50, move 20-40 to trash, add .gitignore, export history"\n
+git push -u origin feature/linux-practice2\n
+git push -u origin feature/linux-practice\n
+git branch
+jumpeihirosawa@jumpeinoMacBook-Pro server_lesson % git branch\n* feature/linux-practice\n  main\njumpeihirosawa@jumpeinoMacBook-Pro server_lesson % 
+git switch main\n
+git commit --allow-empty -m "chore: initialize main branch"\n
+git push -u origin main\n
+git switch feature/linux-practice\n
+git push -u origin feature/linux-practice\n
+gh repo edit --default-branch main\n
+git branch
+git push -u origin feature/linux-practice\n
+cd ~/server_lesson\n
+git switch --orphan baseline\n
+git rm -r --cached .\n
+printf "# server_lesson\n\nBaseline branch.\n" > README.md\n
+git add README.md\n
+git commit -m "chore: baseline (README only)"\n
+git brancj
+git branch
+git push -u origin baseline\n
+ls
+cd ~/server_lesson\n
+ls -1 linux_practice2/documents | head\n
+git branch --show-current\n
+git status -s\n
+git ls-tree -r --name-only HEAD | grep '^linux_practice2/' || echo "trackedなし"\n
+git switch feature/linux-practice\n
+git branch
+mkdir -p linux_practice1/public\n
+[ -f linux_practice1/public/index.php ] || cat > linux_practice1/public/index.php <<'PHP'\n
+[ -f linux_practice1/public/index.php ] || cat > linux_practice1/public/index.php <<'PHP'\n<?php echo "linux_practice1: It works!\n";\nPHP
+[ -f linux_practice1/public/index_bk.php ] || cp -p linux_practice1/public/index.php linux_practice1/public/index_bk.php\n
+rm -rf linux_practice1/tmp\n
+cp -R linux_practice1/public linux_practice1/tmp\n
+rm -f linux_practice1/tmp/index_bk.php\n
+[ -f README.md ] || cat > README.md <<'MD'\nMD
+vi README.md
+mkdir -p linux_practice2/documents\n
+for i in $(seq -w 1 50); do : > linux_practice2/documents/gizumo${i}.md; done\n
+mkdir -p linux_practice2/trash\n
+for i in $(seq -w 20 40); do mv linux_practice2/documents/gizumo${i}.md linux_practice2/trash/ 2>/dev/null; done\n
+echo 'trash/gizumo2[0-9].md' >> linux_practice2/.gitignore\n
